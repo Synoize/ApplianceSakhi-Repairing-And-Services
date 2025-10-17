@@ -12,6 +12,7 @@ const AppContextProvider = (props) => {
     const [token, setToken] = useState(localStorageToken ? localStorageToken : false)
 
     const [userData, setUserData] = useState(false);
+    const [ dashboardData, setDashboardData] = useState(0);
 
     const getUserProfileData = async () => {
         try {
@@ -28,6 +29,25 @@ const AppContextProvider = (props) => {
         }
     }
 
+    const getDashboardData = async () => {
+        try {
+            const { data } = await axios.get(`${backendUrl}/api/dashboard`)
+            
+            if (data.success) {
+                setDashboardData(data.dashData)
+            } else {
+                toast.error(data.message)
+            }
+
+        } catch (error) {
+            toast.error(error.message)
+        }
+    }
+
+    useEffect(() => {
+        getDashboardData();
+    }, [])
+
     useEffect(() => {
         if (token) {
             getUserProfileData()
@@ -37,9 +57,10 @@ const AppContextProvider = (props) => {
     }, [token])
 
     const value = {
-        axios, currencySymbol, backendUrl,
+        axios, currencySymbol, backendUrl, dashboardData,
         token, setToken,
-        userData, setUserData, getUserProfileData
+        userData, setUserData, getUserProfileData,
+
     }
 
     return (
