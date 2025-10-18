@@ -10,15 +10,13 @@ const Navbar = () => {
     color: isActive ? "#3b82f6" : "#000",
   });
 
-  // Disable scrolling when menu is open
   useEffect(() => {
     if (menuOpen) {
-      document.body.style.overflow = "hidden"; // Stop scrolling
+      document.body.style.overflow = "hidden"; 
     } else {
-      document.body.style.overflow = "auto"; // Restore scrolling
+      document.body.style.overflow = "auto"; 
     }
 
-    // Clean up on unmount
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -31,10 +29,10 @@ const Navbar = () => {
         <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="flex flex-wrap items-center gap-4">
             <span className="flex items-center gap-1">
-              <Phone size={14} /> +1-888-987-6543
+              <Phone size={14} /> +918340505092
             </span>
             <span className="flex items-center gap-1">
-              <Mail size={14} /> Mail@youremail.com
+              <Mail size={14} /> appliancesakhi@gmail.com
             </span>
           </div>
           <span className="flex items-center gap-1 mt-1 sm:mt-0">
@@ -47,9 +45,9 @@ const Navbar = () => {
       <header>
         <div className="flex items-center justify-between px-4 md:px-12 py-4">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-blue-600">
+            <button onClick={() => navigate(-1)} className="text-2xl font-bold text-blue-600 cursor-pointer">
               ApplianceSakhi
-            </div>
+            </button>
           </div>
 
           {/* Desktop Menu */}
@@ -71,7 +69,6 @@ const Navbar = () => {
             </NavLink>
           </nav>
 
-          {/* Book Button */}
           <button
             onClick={() => navigate("/book-services")}
             className="hidden md:block bg-yellow-400 text-gray-900 px-6 py-2 rounded hover:bg-yellow-400/80 cursor-pointer hover:scale-105 transition-all ease-in-out duration-300"

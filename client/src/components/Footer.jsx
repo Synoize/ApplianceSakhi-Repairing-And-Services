@@ -20,11 +20,11 @@ const Footer = () => {
                         </div>
                         <div className="font-medium leading-snug">
                             <h2> Phone: </h2>
-                            <p className="font-light">+91 ***********</p>
+                            <p className="font-light">+91 8340505092</p>
                         </div>
                         <div className="font-medium leading-snug">
                             <h2> Email: </h2>
-                            <p className="font-light">inquiry@appliancesakhi.com</p>
+                            <p className="font-light">appliancesakhi@gmail.com</p>
                         </div>
                         <div className="font-medium leading-snug">
                             <h2> Hours: </h2>
@@ -79,7 +79,7 @@ const Footer = () => {
 
             <div className="border-t border-gray-100 py-6 text-center text-sm text-gray-500">
                 <p>Copyright © 2025 ApplanceSakhi – All Rights Reserved.</p>
-                <p>Powered by <span className="font-medium text-gray-700">MokeSpace Agency</span></p>
+                <p>Powered by <span className="font-medium text-gray-700"><a href="https://instagram.com/mokespace.agency" target="_blank" aria-label="Instagram">MokeSpace Agency</a></span></p>
             </div>
         </footer>
     )
