@@ -7,6 +7,7 @@ import geyser from './geyser.jpg'
 import ac from './ac.jpg'
 import refrigerator from './refrigerator.jpg'
 import ro from './ro.jpg'
+import microwave_oven from './microwave_oven.jpg'
 
 export const assets = {
     dummy_profile,
@@ -16,8 +17,9 @@ export const assets = {
     washing_machine,
     geyser,
     ac,
+    microwave_oven,
     refrigerator,
-    ro
+    ro,
 }
 
 export const slides = [
@@ -86,7 +88,7 @@ export const services = [
   },
   {
     title: "Microwave Repair",
-    image: "",
+    image: microwave_oven,
     description:
       "Facing problems with your microwave oven? Our experienced technicians provide reliable and quick microwave repair for all types — convection, grill, or solo.",
     points: [
