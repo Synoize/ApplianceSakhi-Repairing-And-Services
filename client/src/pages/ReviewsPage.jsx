@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import ReviewSection from "../components/ReviewSection";
 
 const ReviewsPage = () => {
   return (
-    <div>ReviewsPage</div>
-  )
-}
+    <ReviewSection/>
+  );
+};
 
-export default ReviewsPage
+export default ReviewsPage;

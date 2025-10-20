@@ -8,6 +8,8 @@ import ac from './ac.jpg'
 import refrigerator from './refrigerator.jpg'
 import ro from './ro.jpg'
 import microwave_oven from './microwave_oven.jpg'
+import review_man from './review_man.png'
+import review_lady from './review_lady.png'
 
 export const assets = {
     dummy_profile,
@@ -20,6 +22,8 @@ export const assets = {
     microwave_oven,
     refrigerator,
     ro,
+    review_man,
+    review_lady
 }
 
 export const slides = [
@@ -141,3 +145,40 @@ export const users = [
         isProvider: false
     },
 ]
+
+
+
+export const reviews = [
+  {
+    name: "Rahul Verma",
+    location: "Patna, Bihar",
+    rating: 5,
+    comment:
+      "Excellent service! The technician arrived on time and repaired my washing machine quickly. Highly recommended!",
+    image: review_man,
+  },
+  {
+    name: "Sneha Sharma",
+    location: "Kankarbagh, Patna",
+    rating: 4,
+    comment:
+      "Great experience with their AC repair service. The team was professional and polite.",
+    image: review_lady,
+  },
+  {
+    name: "Amit Kumar",
+    location: "Rajendra Nagar, Patna",
+    rating: 5,
+    comment:
+      "My refrigerator wasn’t cooling properly, and they fixed it within hours. Super fast response!",
+    image: review_man,
+  },
+  {
+    name: "Priya Sinha",
+    location: "Boring Road, Patna",
+    rating: 4,
+    comment:
+      "Affordable and efficient! Booked online and the service was completed the same day.",
+    image: review_lady,
+  },
+];

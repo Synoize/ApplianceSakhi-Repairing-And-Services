@@ -23,7 +23,7 @@ const ServiceSection = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-blue-700/10 rounded-lg shadow-md hover:shadow-lg overflow-hidden transition-all duration-300"
+            className="bg-blue-500/10 rounded-lg shadow-md hover:shadow-lg overflow-hidden transition-all duration-300"
           >
             <img
               src={service.image}

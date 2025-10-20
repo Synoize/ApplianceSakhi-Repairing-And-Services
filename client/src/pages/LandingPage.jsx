@@ -3,6 +3,7 @@ import HeaderSection from '../components/HeaderSection'
 import ServiceSection from '../components/ServiceSection'
 import Stats from '../components/Stats'
 import ServicesTreePage from './ServicesTreePage'
+import ReviewSection from '../components/ReviewSection'
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <HeaderSection/>
       <ServiceSection/>
       <ServicesTreePage/>
+      <ReviewSection/>
       <Stats/>
     </div>
   )

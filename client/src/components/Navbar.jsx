@@ -24,12 +24,11 @@ const Navbar = () => {
 
   return (
     <div className="border-b border-gray-200">
-      {/* Topbar */}
       <div className="bg-gray-900 text-gray-100 text-xs px-4 md:px-12 py-4">
         <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="flex flex-wrap items-center gap-4">
             <span className="flex items-center gap-1">
-              <Phone size={14} /> +918340505092
+              <Phone size={14} /> +91 9708516375
             </span>
             <span className="flex items-center gap-1">
               <Mail size={14} /> appliancesakhi@gmail.com

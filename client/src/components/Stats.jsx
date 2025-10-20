@@ -17,7 +17,7 @@ const Stats = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h3 className="text-4xl md:text-5xl font-extrabold">{dashboardData.totalOrders}+</h3>
+          <h3 className="text-4xl md:text-5xl font-extrabold">{dashboardData? dashboardData.totalOrders : 0}+</h3>
           <p className="mt-2 text-base md:text-lg text-gray-200">Total Platform Orders</p>
         </div>
 

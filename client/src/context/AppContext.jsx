@@ -12,7 +12,7 @@ const AppContextProvider = (props) => {
     const [token, setToken] = useState(localStorageToken ? localStorageToken : false)
 
     const [userData, setUserData] = useState(false);
-    const [ dashboardData, setDashboardData] = useState(0);
+    const [ dashboardData, setDashboardData] = useState();
 
     const getUserProfileData = async () => {
         try {
