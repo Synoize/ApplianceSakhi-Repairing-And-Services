@@ -1,3 +1,4 @@
+import logo from './logo.png'
 import dummy_profile from './dummy_profile.png'
 import img1 from './img1.png'
 import img2 from './img2.png'
@@ -12,45 +13,46 @@ import review_man from './review_man.png'
 import review_lady from './review_lady.png'
 
 export const assets = {
-    dummy_profile,
-    img1,
-    img2,
-    img3,
-    washing_machine,
-    geyser,
-    ac,
-    microwave_oven,
-    refrigerator,
-    ro,
-    review_man,
-    review_lady
+  logo,
+  dummy_profile,
+  img1,
+  img2,
+  img3,
+  washing_machine,
+  geyser,
+  ac,
+  microwave_oven,
+  refrigerator,
+  ro,
+  review_man,
+  review_lady
 }
 
 export const slides = [
-    {
-        id: 1,
-        title: "Our Service is a Breath of Fresh Air",
-        subtitle: "Free Service Quote",
-        description:
-            "Cooltek provides a wide variety of HVAC services to homes and businesses since 1996.",
-        image: assets.img1,
-    },
-    {
-        id: 2,
-        title: "Your Comfort is Our Top Priority",
-        subtitle: "Reliable HVAC Experts",
-        description:
-            "Our technicians are trained to provide you with the best heating and cooling solutions.",
-        image: assets.img2,
-    },
-    {
-        id: 3,
-        title: "Keeping You Cool, All Year Round",
-        subtitle: "Professional Maintenance",
-        description:
-            "We ensure your HVAC systems are efficient, safe, and built to last through every season.",
-        image: assets.img3,
-    },
+  {
+    id: 1,
+    title: "Our Service is a Breath of Fresh Air",
+    subtitle: "Free Service Quote",
+    description:
+      "Cooltek provides a wide variety of HVAC services to homes and businesses since 1996.",
+    image: assets.img1,
+  },
+  {
+    id: 2,
+    title: "Your Comfort is Our Top Priority",
+    subtitle: "Reliable HVAC Experts",
+    description:
+      "Our technicians are trained to provide you with the best heating and cooling solutions.",
+    image: assets.img2,
+  },
+  {
+    id: 3,
+    title: "Keeping You Cool, All Year Round",
+    subtitle: "Professional Maintenance",
+    description:
+      "We ensure your HVAC systems are efficient, safe, and built to last through every season.",
+    image: assets.img3,
+  },
 ];
 
 export const services = [
@@ -131,19 +133,19 @@ export const services = [
 
 
 export const users = [
-    {
-        _id: 'user1',
-        name: 'Richard James',
-        image: dummy_profile,
-        categories: "",
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 500,
-        address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
-        },
-        isProvider: false
+  {
+    _id: 'user1',
+    name: 'Richard James',
+    image: dummy_profile,
+    categories: "",
+    about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+    fees: 500,
+    address: {
+      line1: '17th Cross, Richmond',
+      line2: 'Circle, Ring Road, London'
     },
+    isProvider: false
+  },
 ]
 
 

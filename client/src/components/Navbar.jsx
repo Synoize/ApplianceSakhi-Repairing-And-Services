@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
+import { assets } from "../assets/assets";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,12 +43,10 @@ const Navbar = () => {
 
       {/* Navbar */}
       <header>
-        <div className="flex items-center justify-between px-4 md:px-12 py-4">
-          <div className="flex items-center space-x-2">
-            <button onClick={() => navigate(-1)} className="text-2xl font-bold text-blue-600 cursor-pointer">
-              ApplianceSakhi
-            </button>
-          </div>
+        <div className="flex items-center justify-between px-4 md:px-12 py-2">
+          <span className="cursor-pointer" onClick={() => navigate(-1)} >
+            <img src={assets.logo} alt="appliancesakhi" className="h-16" />
+          </span>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-6">
