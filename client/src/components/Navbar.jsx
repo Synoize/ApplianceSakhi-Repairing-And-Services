@@ -43,7 +43,7 @@ const Navbar = () => {
 
       {/* Navbar */}
       <header>
-        <div className="flex items-center justify-between px-4 md:px-12 py-4">
+        <div className="flex items-center justify-between px-4 md:px-12 py-2">
           <span className="cursor-pointer" onClick={() => navigate(-1)} >
             <img src={assets.logo} alt="appliancesakhi" className="h-10 md:h-14" />
           </span>
